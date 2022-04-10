@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Anek Tamil', sans-serif;
+    background-color: #000;
+}
+
+.container {
+    width: 35%;
+}
+
+.container > p:first-child {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container textarea {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    resize: none;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.tag {
+    background-color: orangered;
+    padding: 8px 16px;
+    border-radius: 500px;
+    color: #fff;
+    cursor: default;
+}
+
+.tag.picked-tag {
+    background-color: grey;
+}
